@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/avenir.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+BODY {
+  font-family: 'Avenir';
+}
+
+.td {
+  color: #000;
+  font-family: 'Avenir';
+}
