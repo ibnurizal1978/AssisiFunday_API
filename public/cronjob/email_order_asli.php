@@ -18,14 +18,6 @@ require 'plugins/PHPMailer/src/SMTP.php';
 //$pdf=new PDF_HTML();
 require_once 'plugins/tcpdf/tcpdf_include.php';
 
-
-$base_url         = 'https://assisifunday.trinaxmind.com/';
-$db_server        = '127.0.0.1';
-$db_user          = 'assisi';
-$db_password      = 'Database@123';
-$db_name          = 'db_assisi';
-$conn 			  = new mysqli($db_server,$db_user,$db_password,$db_name) or die (mysqli_error($conn));
-
 $files = array();
 $s1 = "SELECT order_code, full_name, delivery_fee, donation, voucher_amount, credit_used, address, zip_code, email FROM tbl_order WHERE order_status = 'COMPLETED' AND email_sent_status = 0";
 $h1 = mysqli_query($conn, $s1);
